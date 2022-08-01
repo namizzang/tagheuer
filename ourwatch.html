@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8"/>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+   <link rel="shortcut icon" title="favicon" href="img/fa.SVG"/>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="shortcut icon" title="favicon" href="img/fa.SVG"/>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <title>TAG Heuer® Official Website - Swiss Luxury Watches since 1860</title>
+	<style type="text/css">
+      a:hover, a:focus{text-decoration:none;}
+   /* ########## wrap ########## */
+      #wrap{min-width:1025px; width:100%;}
+   /* ######### header ######## */
+      #header{width:100%; position:fixed; left:0; top:0; z-index:9999;}
+      #header:after{content:''; display:block; clear:both;}
+
+      #headerInfo{width:100%; height:24px; line-height:24px; border-bottom:1px solid #333; background-color:#000;}
+      #headerInfo ul{width:50%; box-sizing:border-box; font-size:10px; float:left;}
+      #headerInfo .l_info{text-align:left; padding-left:8px;}
+      #headerInfo .l_info li{padding-right:12px;}
+      #headerInfo .l_info .cont{width:80px;}
+      #headerInfo .l_info .cont select{border:none; background-color:#000; color:#fff;}
+      #headerInfo .r_info{text-align:right; padding-right:8px;}
+      #headerInfo .r_info li{padding-left:12px;}
+      #headerInfo li{display:inline;}
+      #headerInfo li a{color:#fff;}
+      
+
+      #nav{width:100%; height:70px; background-color:#000;}
+      #nav .inner{position:relative;}
+      #nav h1{width:40px; padding-left:8px; position:absolute; left:0; top:50%; transform:translateY(-50%);}
+      #nav h1 a{display:block; width:100%; height:100%;}
+      #nav h1 img{width:100%;}
+      #nav ul{width:1220px; height:100%; line-height:70px; padding-left:60px; float:left;}
+      #nav li{display:inline; font-size:12px; color:#fff; padding:0 24px;}
+      #nav li a{color:#fff; font-weight:600;}
+
+      #productInfo{width:100%; height:44px; line-height:44px; background-color:#efefef; display:none;}
+      #productInfo .inner{position:relative;}
+      #productInfo .inner:after{content:''; display:block; clear:both;}
+      #productInfo .inner div{float:left;}
+      #productInfo .img{width:60px; padding:0 8px; box-sizing:border-box;}
+      #productInfo .img img{width:100%;}
+      #productInfo .info p{font-size:12px; font-weight:600; padding-right:18px; float:left;}
+      #productInfo .cart{width:140px; height:30px; line-height:28px; border:1px solid #000; box-sizing:border-box; text-align:center;  font-size:12px; position:absolute; right:0; top:50%; transform:translateY(-50%);}
+      #productInfo .cart a{display:block; width:100%; height:100%; color:#fff; background-color:#000; font-size:10px; transition:.3s ease all;}
+      #productInfo .cart a:hover{background-color:#efefef; color:#000;}
+
+   /* ########## container ########## */
+      #container{width:100%;}
+       /* ########## container / Svisual ########## */
+      #Svisual{width:100%; height:450px; background-image:url('img/sub1/top_vis.png'); background-position:left; background-size:100%; background-repeat:no-repeat; background-color:pink; }
+      #Svisual .inner{position:relative;}
+      /* 나중에 위치 position 지정 */
+      #Svisual .text_area{width:300px; height:260px; margin:70px 0; text-align:center; color:#fff; float:right; position:absolute; right:0; top:50%; transform:translateY(-50%); }
+      #Svisual .text_area h2{font-size:10px; letter-spacing:2px;}
+      #Svisual .text_area h3{font-size:42px; font-weight:600; padding:16px 0 24px;}
+      #Svisual .text_area p{font-size:12px;}
+      
+      /* ########## container / filterArea ########## */
+      #filterArea{width:100%; height:36px; padding-top:4px; z-index:9999; background-color:#fff; position:absolute; left:0; top:0;}
+      #filterArea ul{width:100%;}
+      #filterArea ul:after{content:''; display:block; clear:both;}
+      #filterArea li{float:left; font-size:11px; padding:0 12px; line-height:36px; }
+      #filterArea .sort{float:right;}
+      #filterArea li ul{display:none;}
+      
+      /* ########## container / content ########## */
+      #content{width:100%; position:relative; padding-top:40px;}
+      #content .inner{width:1280px;}
+
+      /* ########## container / content / carrera ########## */
+      #carreraArea h2{text-align:center; font-size:18px; padding:46px 0 30px;}
+      .l_cont{width:100%;}
+      .l_cont:after{content:''; display:block; clear:both;}
+      .l_cont .cont_vis{width:838px; height:370px; margin:0 8px 20px; position:relative; float:left;}
+      .l_cont .cont_vis .img_area{width:100%; height:100%; background-image:url('img/sub1/carrera_vis0.png'); background-size:100%; background-position:center; }
+
+      .l_cont .cont_vis .text_area{width:100%; padding:10px 12px; color:#fff; box-sizing:border-box; position:absolute; left:0; bottom:0;}
+      .l_cont .cont_vis .text_area h3{font-size:16px; padding-bottom:8px;}
+      .l_cont .cont_vis .text_area p{font-size:14px;}
+      .l_cont .cont_vis .text_area .btn_area{padding:18px 0;}
+      .l_cont .cont_vis .text_area .btn_area p{float:left; padding-right:24px;}
+      .l_cont .cont_vis .text_area .btn_area a{font-size:12px; color:#fff;}
+      /* w_product :: 각 제품 */
+      .l_cont .w_product{width:410px; height:370px; margin:0 8px 20px; float:left; background-color:#efefef;}
+      .l_cont .w_product a{display:block; width:100%; height:100%;}
+      .l_cont .w_product .img_area{width:100%; height:250px; padding-top:10px; box-sizing:border-box; text-align:center;}
+      .l_cont .w_product .img_area img{height:100%;}
+      .l_cont .w_product .desc_area{width:100%; height:120px; text-align:center; background-color:#efefef; padding:18px 0; box-sizing:border-box;}
+      .l_cont .w_product .desc_area span{display:block; font-size:11px; color:#DD0A04; padding-bottom:12px;}
+      .l_cont .w_product .desc_area strong{font-size:12px;}
+      .l_cont .w_product .desc_area .desc{color:#777;}
+      .l_cont .w_product .desc_area em{font-style:normal; font-size:11px;}
+      .l_cont .w_product .desc_area .color{display:none;}
+      .view_btn{margin-top:20px; text-align:center; font-size:12px;}
+      .view_btn a{display:inline-block; padding:16px 18px; border:1px solid #000;}
+      .view_btn:hover a{background-color:#000; color:#fff;}
+      
+      /* ########## container / content / aquaracer  ########## */
+      #aquaArea h2{text-align:center; font-size:18px; padding:46px 0 30px;}
+      #aquaArea .aqua{width:100%;}
+      #aquaArea .aqua:after{content:''; display:block; clear:both;}
+      #aquaArea .cont_vis{width:838px; height:370px;margin:0 8px 20px; position:relative; float:left;}
+      #aquaArea .cont_vis .img_area{width:100%; height:100%; background-image:url('img/sub1/aqau_vis0.png'); background-size:100%; background-position:center; }
+      
+      #aquaArea .cont_vis .text_area{width:100%; padding:10px 12px; color:#fff; box-sizing:border-box; position:absolute; left:0; bottom:0;}
+      #aquaArea .cont_vis .text_area h3{font-size:16px; padding-bottom:8px;}
+      #aquaArea .cont_vis .text_area p{font-size:14px;}
+      #aquaArea .cont_vis .text_area .btn_area{padding:18px 0;}
+      #aquaArea .cont_vis .text_area .btn_area p{float:left; padding-right:24px;}
+      #aquaArea .cont_vis .text_area .btn_area a{font-size:12px; color:#fff;}
+      #aquaArea .w_product{width:410px; height:370px; margin:0 8px 20px; float:left; background-color:#efefef;}
+      #aquaArea .w_product a{display:block; width:100%; height:100%;}
+      #aquaArea .w_product .img_area{width:100%; height:250px; padding-top:10px; box-sizing:border-box; text-align:center;}
+      #aquaArea .w_product .img_area img{height:100%;}
+      #aquaArea .w_product .desc_area{width:100%; height:120px; text-align:center; background-color:#efefef; padding:18px 0; box-sizing:border-box;}
+      #aquaArea .w_product .desc_area span{display:block; font-size:11px; color:#DD0A04; padding-bottom:12px;}
+      #aquaArea .w_product .desc_area strong{font-size:12px;}
+      #aquaArea .w_product .desc_area .desc{color:#777;}
+      #aquaArea .w_product .desc_area em{font-style:normal; font-size:11px;}
+      #aquaArea .w_product .desc_area .color{display:none;}
+
+      /* ########## container / banCate  ########## */
+      #benCate{width:100%; text-align:center; border-top:1px solid #ccc; margin-top:46px; padding:100px 0;}
+      #benCate h2{font-size:14px; padding-bottom:18px;}
+      #benCate p{font-size:12px;}
+   
+      /* ########## container / subVisual  ########## */
+      #subVisual{width:100%; height:600px; position:relative; overflow:hidden;}
+      #subVisual .img{width:100%;}
+      #subVisual .img img{width:100%;}
+      #subVisual .text_area{width:200px; color:#fff; text-align:center; position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);}
+      #subVisual .text_area h2{font-size:35px; padding-bottom:18px;}
+      #subVisual .text_area .btn_area{width:100%; padding:20px 0; border:1px solid #fff;}
+      #subVisual .text_area .btn_area a{font-size:11px; color:#fff;}
+      #subVisual .text_area .btn_area:hover{background-color:#fff;}
+      #subVisual .text_area .btn_area:hover a{color:#000;}
+
+   /* ############## footer ############### */
+      #footer{width:100%; background-color:#000; padding:80px 0;}
+      #footer:after{content:''; display:block; clear:both;}
+      #footer .inner div{width:20%; float:left; color:#fff;}
+      #footer ul{width:100%;}
+      #footer h3{font-size:14px; color:#fff; padding-bottom:20px;}
+      #footer li{width:100%;  padding-bottom:12px;}
+      #footer li a{display: inline-block; position:relative; transition:.3s ease all;}
+      #footer li a:after{content:''; width:0; height:1px; position:absolute; left:50%; bottom:-5px; background-color:#fff;  transform:translateX(-50%); transition:.5s ease all;}
+      #footer li a:hover:after{width:100%;}
+      #footer li a{font-size:12px; color:#fff;}
+	</style>
+   <script>
+      $(function(){
+         $(window).scroll(function(){
+            var $userscroll = $(this).scrollTop(),
+               $headerHeight = $('#header').height(),
+               $filterHeight = $('#filterArea').height(),
+               $filterOffset = $('#filterArea').offset().top,
+               $filterFixe = $filterOffset - $headerHeight;
+
+               if($userscroll >= $filterFixe){
+                  $('#filterArea').css({'position':'fixed' , 'top':'90px'});
+               }
+         });
+      });
+   </script>
+</head>
+<body>
+	<div id="wrap">
+      <header id="header">
+         <div id="headerInfo">
+            <ul class="l_info">
+               <li class="cont">
+                  <select id="cont" title="Europe">
+                     <option value="South_Korea||English">South Korea||English</option>
+                     <option value="Albania">Albania</option>
+                     <option value="Austria">Austria</option>
+                     <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                     <option value="Belgium">Belgium</option>
+                     <option value="Bulgaria">Bulgaria</option>
+                     <option value="Schweiz/Suisse/Svizzera">Schweiz/Suisse/Svizzera</option>
+                     <option value="Cyprus">Cyprus</option>
+                     <option value="Germany">Germany</option>
+                     <option value="Denmark">Denmark</option>
+                  </select>
+               </li>
+               <li>
+                  <a href="#" title="Accessibility">
+                     Accessibility
+                  </a>
+               </li>
+               <li>
+                  <a href="#" title="Find a TAG Heuer store">
+                     Find a TAG Heuer store
+                  </a>
+               </li>
+            </ul>
+            <ul class="r_info">
+               <li>
+                  <a href="#"title="Services">
+                     Services
+                  </a>
+               </li>
+               <li>
+                  <a href="#" title="Accessibility">
+                     Contact
+                  </a>
+               </li>
+               <li>
+                  <a href="#" title="us +41 (0) 800 005 858">
+                     us +41 (0) 800 005 858
+                  </a>
+               </li>
+            </ul>
+         </div>
+         <nav id="nav">
+            <div class="inner">
+               <h1>
+                  <a href="index.html" title="TagHeuer">
+                     <img src="img/logo.SVG" alt="TagHeuer"/>
+                  </a>
+               </h1>
+               <ul class="gnb">
+                  <li>
+                     <a href="#" title="TIMEPIECES">TIMEPIECES</a>
+                  </li>
+                  <li>
+                     <a href="#" title="SMARTWATCHES">SMARTWATCHES</a>
+                  </li>
+                  <li>
+                     <a href="#" title="TAG_HEUER_UNIVERSE">TAG HEUER UNIVERSE</a>
+                  </li>
+               </ul>
+               <!-- gnb -->
+            </div>
+            <div id="productInfo">
+               <div class="inner">
+                  <div class="img">
+                     <a href="#" title="TAG HEUER CONNECTED">
+                        <img src="img/sub2/thumbnail3.png" alt="TAG HEUER CONNECTED"/>
+                     </a>
+                  </div>
+                  <div class="info">
+                     <p>TAG HEUER CONNECTED</p>
+                     <p>₩ 2.710.000</p>
+                  </div>
+                  <div class="cart">
+                     <a href="#" title="ADD_CART">ADD CART</a>
+                  </div>
+               </div>
+            </div>
+            <!-- productInfo -->
+         </nav>
+         <!-- header -->
+      </header>
+      <!-- headerWrap -->
+      
+      <div id="container">
+
+         <div id="Svisual"><!--background_image-->
+            <div class="inner">
+
+               <div class="text_area">
+                  <h2>TAG HEUER</h2>
+                  <h3>ALL TAG HEUER WATCHES</h3>
+                  <p>
+                     Explore TAG Heuer’s luxury timepieces. From classic models to various types of dials and bracelets, find a swiss-made watch thatmatches your style.
+                  </p>
+               </div>
+
+            </div>
+         </div>
+         <!-- Svisual -->
+         
+         <div id="content">
+            <div id="filterArea">
+               <div class="inner">
+                  <div class="filter_list">
+                     
+                     <ul>
+   
+                        <li>
+                           <p>
+                              Collection 
+                           </p>
+                           <ul>
+                              <li></li>
+                           </ul>
+                        </li>
+                        <li>
+                           <p>
+                              Gender 
+                           </p>
+                           <ul>
+                              <li></li>
+                           </ul>
+                        </li>
+                        <li>
+                           <p>
+                              Size  
+                           </p>
+                           <ul>
+                              <li></li>
+                           </ul>
+                        </li>
+                        <li>
+                           <p>
+                              Main Color 
+                           </p>
+                           <ul>
+                              <li></li>
+                           </ul>
+                        </li>
+                        <li>
+                           <p>
+                              Movement 
+                           </p>
+                           <ul>
+                              <li></li>
+                           </ul>
+                        </li>
+                        <li>
+                           <p>
+                              More filters 
+                           </p>
+                           <ul>
+                              <li></li>
+                           </ul>
+                        </li>
+                        <li class="sort">
+                           <p>
+                              Sort by price
+                           </p>
+                           <ul>
+                              <li></li>
+                           </ul>
+                        </li>
+                        
+                     </ul>
+   
+                  </div>
+               </div>
+            </div>
+            <!-- filterArea -->
+            <div class="inner">
+
+               <div id="carreraArea">
+
+                  <h2>TAG HEUER CARRERA</h2>
+                  <div class="carrera l_cont">
+                     <div class="cont_vis">
+                        <div class="img_area">
+                        </div>
+                        <div class="text_area">
+                           <h3>TAG Heuer Carrera</h3>
+                           <p>A refined style for a sportive yet elegant look.</p>
+                           <div class="btn_area clear">
+                              <p><a href="#" title="DISCOVER_CARRERA_COLLECTION">DISCOVER THE TAG HEUER CARRERA COLLECTION</a></p>
+                              <p><a href="#" title="VIEW_CARRERA_WATCHES">VIEW ALL TAG HEUER CARRERA WATCHES</a></p>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- cont_vis -->
+                     <div class="w_product">
+                        <p class="img_area">
+                           <a href="#" title="TAG HEUER CARRERA 160 YEARS ANNIVERSARY">
+                              <img src="img/sub1/carrera0.png" alt="carrera0"/>
+                           </a>
+                        </p>                     
+                        <!-- TAG Heuer Carrera 160 Years Anniversary, Hexadecimal Color : #009de2
+                        TAG Heuer Carrera 160 Years Anniversary, Hexadecimal Color : #000000
+                        TAG Heuer Carrera 160 Years Anniversary, Hexadecimal Color : #009de2 -->
+                        <p class="desc_area">
+                           <a href="#" title="TAG HEUER CARRERA 160 YEARS ANNIVERSARY">
+                              <span>LIMITED EDITION</span>
+                              <strong>TAG HEUER CARRERA 160 YEARS ANNIVERSARY</strong>
+                              <span class="desc">Automatic Chronograph - Diameter 44 mm</span>
+                              <em>₩ 7.830.000</em>
+                              <span class="color">
+                                 <span><a href="#" title=""></a></span>
+                                 <span><a href="#" title=""></a></span>
+                                 <span><a href="#" title=""></a></span>
+                              </span>
+                           </a>
+                        </p>
+                     </div>
+                     <!-- c_product0 -->
+                     <div class="w_product">
+                        <p class="img_area">
+                           <a href="#" title="TAG HEUER CARRERA">
+                              <img src="img/sub1/carrera1.png" alt="carrera1"/>
+                           </a>
+                        </p>
+   <!-- 
+   Hexadecimal Color : #9a9a9a
+   Hexadecimal Color : #172483
+   Hexadecimal Color : #000000
+   -->
+                        <p class="desc_area">
+                           <a href="#" title="TAG HEUER CARRERA">
+                              <span>NEW</span>
+                              <strong>TAG HEUER CARRERA</strong>
+                              <span class="desc">Automatic Watch - Diameter 39 mm</span>
+                              <em>₩ 3.580.000</em>
+                              <span class="color">
+                                 <span><a href="#" title=""></a></span>
+                                 <span><a href="#" title=""></a></span>
+                                 <span><a href="#" title=""></a></span>
+                              </span>
+                           </a>
+                        </p>
+                     </div>
+                     <!-- c_product1 -->
+                     <div class="w_product">
+                        <p class="img_area">
+                           <a href="#" title="TAG HEUER CARRERA PORSCHE CHRONOGRAPH SPECIAL EDITION">
+                              <img src="img/sub1/carrera2.png" alt="carrera2"/>
+                           </a>
+                        </p>
+   <!-- 
+   Hexadecimal Color : #000000
+   -->
+                        <p class="desc_area">
+                           <a href="#" title="TAG HEUER CARRERA PORSCHE CHRONOGRAPH SPECIAL EDITION">
+                              <span>LIMITED EDITION</span>
+                              <strong>TAG HEUER CARRERA PORSCHE CHRONOGRAPH SPECIAL EDITION</strong>
+                              <span class="desc">Automatic Chronograph - Diameter 44 mm</span>
+                              <em>₩ 7.690.000</em>
+                              <span class="color">
+                                 <span><a href="#" title=""></a></span>
+                              </span>
+                           </a>
+                        </p>
+                     </div>
+                     <!-- c_product2 -->
+                     <div class="w_product">
+                        <p class="img_area">
+                           <a href="#" title="TAG HEUER CARRERA">
+                              <img src="img/sub1/carrera3.png" alt="carrera3"/>
+                           </a>
+                        </p>
+   <!-- 
+   Hexadecimal Color : #9a9a9a
+   Hexadecimal Color : #009de2
+   Hexadecimal Color : #9a9a9a
+   Hexadecimal Color : #9a9a9a
+   -->
+                        <p class="desc_area">
+                           <a href="#" title="TAG HEUER CARRERA">
+                              <span>&scap;</span>
+                              <strong>TAG HEUER CARRERA</strong>
+                              <span class="desc">Quartz Watch - Diameter 36 mm</span>
+                              <em>₩ 2.700.000</em>
+                              <span class="color">
+                                 <span><a href="#" title=""></a></span>
+                                 <span><a href="#" title=""></a></span>
+                                 <span><a href="#" title=""></a></span>
+                                 <span><a href="#" title=""></a></span>
+                              </span>
+                           </a>
+                        </p>
+                     </div>
+                     <!-- c_product3 -->
+                  </div>
+                  <!-- .carrera -->
+                  <div class="view_btn">
+                     <a href="#" title="VIEW ALL TAG HEUER CARRERA WATCHES">VIEW ALL TAG HEUER CARRERA WATCHES</a>
+                  </div>
+               </div>
+               <!-- #carreraArea -->
+
+               <div id="aquaArea">
+      
+                  <h2>TAG HEUER AQUARACERCARRERA</h2>
+                  <div class="aqua">
+                     <div class="w_product">
+                        <p class="img_area">
+                           <a href="#" title="TAG HEUER AQUARACER PROFESSIONAL 200 DATE">
+                              <img src="img/sub1/aqua0.png" alt="aqua0"/>
+                           </a>
+                        </p>
+                        <!-- Hexadecimal Color : #000000 -->                     
+                        <p class="desc_area">
+                           <a href="#" title="TAG HEUER AQUARACER PROFESSIONAL 200 DATE">
+                              <span>NEW</span>
+                              <strong>TAG HEUER AQUARACER PROFESSIONAL 200 DATE</strong>
+                              <span class="desc">Automatic Watch - Diameter 40 mm</span>
+                              <em>₩ 3.640.000</em>
+                              <span class="color">
+                                 <span><a href="#" title=""></a></span>
+                              </span>
+                           </a>
+                        </p>
+                     </div>
+                     <!-- a_product0 -->
+                     <div class="cont_vis">
+                        <div class="img_area">
+                        </div>
+                        <div class="text_area">
+                           <h3>TAG Heuer Aquaracer</h3>
+                           <p>A sophisticated water-resistant wristwatch with ultimate high-end precision.</p>
+                           <div class="btn_area clear">
+                              <p><a href="#" title="DISCOVER_CARRERA_COLLECTION">DISCOVER THE TAG HEUER CARRERA COLLECTION</a></p>
+                              <p><a href="#" title="VIEW_CARRERA_WATCHES">VIEW ALL TAG HEUER CARRERA WATCHES</a></p>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- cont_vis -->
+                     <div class="w_product">
+                        <p class="img_area">
+                           <a href="#" title="TAG HEUER AQUARACER PROFESSIONAL 200 DATE">
+                              <img src="img/sub1/aqua1.png" alt="aqua1"/>
+                           </a>
+                        </p>
+                        <!-- Hexadecimal Color : #000000 -->
+                        <p class="desc_area">
+                           <a href="#" title="TAG HEUER AQUARACER PROFESSIONAL 200 DATE">
+                              <span>NEW</span>
+                              <strong>TAG HEUER AQUARACER PROFESSIONAL 200 DATE</strong>
+                              <span class="desc">Automatic Watch - Diameter 40 mm</span>
+                              <em>₩ 3.640.000</em>
+                              <span class="color">
+                                 <span><a href="#" title=""></a></span>
+                              </span>
+                           </a>
+                        </p>
+                     </div>
+                     <!-- a_product1 -->
+                     <div class="w_product">
+                        <p class="img_area">
+                           <a href="#" title="TAG HEUER AQUARACER PROFESSIONAL 200">
+                              <img src="img/sub1/aqua2.png" alt="aqua2"/>
+                           </a>
+                        </p>
+                        <!-- Hexadecimal Color : #9a9a9a -->
+                        <p class="desc_area">
+                           <a href="#" title="TAG HEUER AQUARACER PROFESSIONAL 200">
+                              <span>NEW</span>
+                              <strong>TAG HEUER AQUARACER PROFESSIONAL 200</strong>
+                              <span class="desc">Quartz Watch - Diameter 40 mm</span>
+                              <em>₩ 2.700.000</em>
+                              <span class="color">
+                                 <span><a href="#" title=""></a></span>
+                              </span>
+                           </a>
+                        </p>
+                     </div>
+                     <!-- a_product2 -->
+                     <div class="w_product">
+                        <p class="img_area">
+                           <a href="#" title="TAG HEUER AQUARACER PROFESSIONAL 200">
+                              <img src="img/sub1/aqua3.png" alt="aqua3"/>
+                           </a>
+                        </p>
+                        <!-- Hexadecimal Color : #000000 -->
+                        <p class="desc_area">
+                           <a href="#" title="TAG HEUER AQUARACER PROFESSIONAL 200">
+                              <span>NEW</span>
+                              <strong>TAG HEUER AQUARACER PROFESSIONAL 200</strong>
+                              <span class="desc">Quartz Watch - Diameter 40 mm</span>
+                              <em>₩ 2.700.000</em>
+                              <span class="color">
+                                 <span><a href="#" title=""></a></span>
+                              </span>
+                           </a>
+                        </p>
+                     </div>
+                     <!-- a_product3 -->
+                  </div>
+                  <!-- .aqua -->
+                  <div class="view_btn">
+                     <a href="#" title="VIEW ALL TAG HEUER AQUARACERCARRERA WATCHES">VIEW ALL TAG HEUER AQUARACERCARRERA WATCHES</a>
+                  </div>
+
+               </div>
+               <!-- #aquaArea -->
+
+               <div id="formulaArea">
+      
+               </div>
+               <!-- formulaArea -->
+               <div id="monacoArea">
+      
+               </div>
+               <!-- monacoArea -->
+               <div id="autaviaArea">
+      
+               </div>
+               <!-- autaviaArea -->
+               <div id="linkArea">
+      
+               </div>
+               <!-- linkArea -->
+               
+            </div>
+         </div>
+         <!-- content -->
+         <div id="benCate">
+            <h2>OUR WATCHES</h2>
+            <p>Discover all TAG Heuer’s luxury watches. Browse all our styles in various sizes and colors to find the perfect swiss-made timepiece for your wrist.</p>
+         </div>
+         <!-- banner_cate -->
+         <div id="subVisual">
+            <div class="img">
+               <img src="img/sub1/sub_vis.jpg" alt="TAG HEUER CONNECTED">
+            </div>
+            <div class="text_area">
+               <h2>TAG HEUER CONNECTED</h2>
+               <p class="btn_area">
+                  <a href="#" title="DISCOVER THE COLLECTION">
+                     DISCOVER THE COLLECTION
+                  </a>
+               </p>
+            </div>
+         </div>
+
+      </div>
+      <!-- container -->
+
+      <div id="footer">
+         <div class="inner">
+
+            <div class="f_follow">
+               <h3>FOLLOW US</h3>
+               <ul>
+                  <li><a href="#" title="Facebook">Facebook</a></li>
+                  <li><a href="#" title="Instagram">Instagram</a></li>
+                  <li><a href="#" title="LinkedIn">LinkedIn</a></li>
+                  <li><a href="#" title="Pinterest">Pinterest</a></li>
+                  <li><a href="#" title="Youtube">Youtube</a></li>
+                  <li><a href="#" title="Twitter">Twitter</a></li>
+                  <li><a href="#" title="Weibo">Weibo</a></li>
+                  <li><a href="#" title="WeChat">WeChat</a></li>
+                  <li><a href="#" title="Line">Line</a></li>
+                  <li><a href="#" title=""></a></li>
+               </ul>
+            </div>
+            <div class="f_collection">
+               <h3>COLLECTIONS</h3>
+               <ul>
+                  <li><a href="#" title="TAG_Heuer_Connected">TAG Heuer Connected</a></li>
+                  <li><a href="#" title="TAG_Heuer_Carrera">TAG Heuer Carrera</a></li>
+                  <li><a href="#" title="TAG_Heuer_Formula_1">TAG Heuer Formula 1</a></li>
+                  <li><a href="#" title="TAG_Heuer_Aquaracer">TAG Heuer Aquaracer</a></li>
+                  <li><a href="#" title="TAG_Heuer_Monaco">TAG Heuer Monaco</a></li>
+                  <li><a href="#" title="TAG_Heuer_Autavia">TAG Heuer Autavia</a></li>
+                  <li><a href="#" title="TAG_Heuer_Link">TAG Heuer Link</a></li>
+               </ul>
+            </div>
+            <div class="f_maison">
+               <h3>MAISON</h3>
+               <ul>
+                  <li><a href="#" title="Our_Company">Our Company</a></li>
+                  <li><a href="#" title="Our_Story">Our Story</a></li>
+                  <li><a href="#" title="Savoir-Faire">Savoir-Faire</a></li>
+                  <li><a href="#" title="Press_Corner">Press Corner</a></li>
+                  <li><a href="#" title="Professional_Timing ">Professional Timing </a></li>
+                  <li><a href="#" title="Career">Career</a></li>
+                  <li><a href="#" title="Site_map">Site map</a></li>
+               </ul>
+            </div>
+            <div class="f_support">
+               <h3>SUPPORT</h3>
+               <ul>
+                  <li><a href="#" title="Contact_Us">Contact Us</a></li>
+                  <li><a href="#" title="FAQ">FAQ</a></li>
+                  <li><a href="#" title="Customer_Care">Customer Care</a></li>
+                  <li><a href="#" title="Warranty">Warranty</a></li>
+                  <li><a href="#" title="Shipping">Shipping</a></li>
+                  <li><a href="#" title="Returns">Returns</a></li>
+                  <li><a href="#" title="Buying_on_TAGHeuer.com">Buying on TAGHeuer.com</a></li>
+                  <li><a href="#" title="PRIVACY_N_TERMS">PRIVACY &amp; TERMS</a></li>
+               </ul>
+            </div>
+            <div class="f_terms">
+               <h3>PRIVACY &amp; TERMS</h3>
+               <ul>
+                  <li><a href="#" title="Terms & Conditions">Terms &amp; Conditions</a></li>
+                  <li><a href="#" title="Privacy_Policy">Privacy_Policy</a></li>
+                  <li><a href="#" title="Cookies_Settings">Cookies Settings</a></li>
+                  <li><a href="#" title="Press_Corner">Press Corner</a></li>
+                  <li><a href="#" title="Professional_Timing ">Professional Timing </a></li>
+                  <li><a href="#" title="Terms_of_Use">Terms of Use</a></li>
+                  <li><a href="#" title="Human_Rights_Policy">Human Rights Policy</a></li>
+                  <li><a href="#" title="Supply_Chain_Policies">Supply Chain Policies</a></li>
+                  <li><a href="#" title="Legal_Notice">Legal Notice</a></li>
+                  <li><a href="#" title="Accessibility_Statement">Accessibility Statement</a></li>
+               </ul>
+            </div>
+
+         </div>
+      </div>
+      <!-- footer -->
+   </div>
+</body>
+</html>

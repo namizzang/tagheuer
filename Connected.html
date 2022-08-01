@@ -1,0 +1,976 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+	<title> TAG Heuer® Official Website - Swiss Luxury Watches since 1860 </title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+   <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="shortcut icon" title="favicon" href="img/fa.SVG"/>
+   <link rel="shortcut icon" title="favicon" href="img/fa.SVG"/>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<style type="text/css">
+   /* ######### wrap ######## */
+      #wrap{min-width:1025px; width:100%;}
+      h2{position:absolute; left:-9999px; top:-9999px; width:1px; height:1px; overflow:hidden;}
+   
+   /* ######### header ######## */
+      #header{width:100%; position:fixed; left:0; top:0; z-index:9999;}
+      #header:after{content:''; display:block; clear:both;}
+
+      #headerInfo{width:100%; height:24px; line-height:24px; border-bottom:1px solid #333; background-color:#000; display:block;}
+      #headerInfo ul{width:50%; box-sizing:border-box; font-size:10px; float:left;}
+      #headerInfo .l_info{text-align:left; padding-left:8px;}
+      #headerInfo .l_info li{padding-right:12px;}
+      #headerInfo .l_info .cont{width:80px;}
+      #headerInfo .l_info .cont select{border:none; background-color:#000; color:#fff;}
+      #headerInfo .r_info{text-align:right; padding-right:8px;}
+      #headerInfo .r_info li{padding-left:12px;}
+      #headerInfo li{display:inline;}
+      #headerInfo li a{color:#fff;}
+      
+      #nav{width:100%; height:70px; background-color:#000; position:relative;}
+      #nav .inner{position:relative;}
+      #nav h1{width:40px; padding-left:8px; position:absolute; left:0; top:50%; transform:translateY(-50%);}
+      #nav h1 a{display:block; width:100%; height:100%;}
+      #nav h1 img{width:100%;}
+      #nav ul{width:1220px; height:100%; line-height:70px; padding-left:60px; float:left;}
+      #nav li{display:inline; font-size:12px; color:#fff; padding:0 24px;}
+      #nav li a{color:#fff; font-weight:600;}
+
+      #productInfo{width:100%; height:44px; line-height:44px; background-color:#efefef; position:absolute; left:0; bottom:0; z-index:-9999; transition:.5s ease all;}
+      #productInfo.active{bottom:-44px;}
+      #productInfo .inner{position:relative;}
+      #productInfo .inner:after{content:''; display:block; clear:both;}
+      #productInfo .inner div{float:left;}
+      #productInfo .img{width:60px; padding:0 8px; box-sizing:border-box;}
+      #productInfo .img img{width:100%;}
+      #productInfo .info p{font-size:12px; font-weight:600; padding-right:18px; float:left;}
+      #productInfo .cart{width:140px; height:30px; line-height:28px; border:1px solid #000; box-sizing:border-box; text-align:center;  font-size:12px; position:absolute; right:0; top:50%; transform:translateY(-50%);}
+      #productInfo .cart a{display:block; width:100%; height:100%; color:#fff; background-color:#000; font-size:10px; transition:.3s ease all;}
+      #productInfo .cart a:hover{background-color:#efefef; color:#000;}
+
+   /* ######### container ######## */
+      #container{width:100%; padding-top:80px;}
+   
+   /* ######### container / proVisual ######## */
+      #proVisual{width:100%; height:90vh; position:relative; background-color:#000;}
+
+      #descArea{width:25%; height:100%; font-size:11px; color:#fff; padding-top:100px; box-sizing:border-box; position:relative; float:right;}
+      #descArea span{color:#DD0A04;}
+      #descArea h3{font-size:18px; font-weight:600; padding:8px 0;}
+      #descArea .info{font-weight:400; padding-bottom:8px;}
+      #descArea .price{padding-bottom:8px;}
+      #descArea .desc{color:#aaa; padding-bottom:8px;}
+      #descArea .desc a{display:block; padding-top:8px; color:#fff;}
+      
+      #btnArea{width:100%; padding-top:8px;}
+      #btnArea div{width:100%; height:50px; line-height:50px; text-align:center; font-weight:600;}
+      #btnArea div p{width:100%;}
+      #btnArea div p a{display:block; width:100%; height:100%; box-sizing:border-box;}
+      #btnArea .cart_btn a{color:#000; background-color:#fff; border:1px solid #fff; transition:.3s ease all;}
+      #btnArea .cart_btn a:hover{background-color:#000; color:#fff;}
+      #btnArea .ad_btn a{color:#fff;}
+
+      #details{width:100%;}
+      #details ul{width:100%; padding:18px 0; border-top:1px solid #ccc; border-bottom:1px solid #ccc;}
+      #details li{display:inline; margin-right:50px;}
+      #details li a{color:#fff;}
+
+      #optionArea{width:100%; position:absolute; left:0; bottom:0;}
+      #optionArea h4{line-height:50px;}
+      #optionArea ul{width:100%;}
+      #optionArea li{width:45px; margin-right:8px; float:left;}
+      #optionArea li a{display:block; width:100%; height:100%;}
+      #optionArea li img{width:100%;}
+
+   /* ######### container / proVisual / mainImg(leftArea) ######## */
+      #mainImg{width:60%; height:100%; overflow:hidden; position:absolute; left:0; top:0;}
+      #mainImg ul{width:100%; height:100%;}
+      #mainImg li{width:100%;}
+      #mainImg li:after{content:''; display:block; clear:both;}
+      #mainImg li p{height:100%; padding-top:30px; float:right;}
+      #mainImg li p img{width:100%;}
+
+      #thumbnail{position:absolute; left:0; top:50%; /*transform:translateY(-50%);*/}
+      #thumbnail ul{width:100%;}
+      #thumbnail li{width:70px; margin-bottom:8px; position:relative; }
+      #thumbnail li:before{content:''; display:block; width:100%; height:100%; background-color:rgba(0,0,0,.3); position:absolute; left:0; top:0; z-index:1; transition:.3s ease all;}
+      #thumbnail li:hover:before{background-color:rgba(0,0,0,0);}
+      #thumbnail li a{display:block; width:100%; height:100%; position:relative;}
+      #thumbnail li a:after{content:''; width:100%; height:2px; background-color:#DD0A04; position:absolute; left:0; bottom:0; display:none;}
+      #thumbnail li a:hover:after{display:block;}
+      #thumbnail li a img{width:100%;}
+      
+   /* ######### parallaxImg ######## */
+      #parallaxImg{width:100%;}
+      #parallaxImg .row{width:660px; margin:0 auto; padding:15px 0; overflow:hidden; position:relative;}
+      #parallaxImg .row:after{content:''; display:block; clear:both;}
+      #parallaxImg .left{width:320px; box-sizing:border-box;}
+      #parallaxImg .left .l_box{width:100%; height:500px; padding:15px 0; overflow:hidden;}
+      #parallaxImg .left .l_box img{width:100%;}
+      #parallaxImg .right{width:320px; position:absolute; top:50%; right:0; transform:translateY(-50%);}
+      #parallaxImg .right img{width:100%; padding:15px 0;}
+      #parallaxImg .right .pointer{width:40px; height:40px; line-height:40px; text-align:center; border-radius:50%; background-color:#DD0A04; position:absolute; left:60%; top:50%; transform:translate(-50%,-50%);}
+      #parallaxImg .right .pointer a{display:inline-block; width:20px; height:20px; border-radius:50%; background-color:#fff; position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); transition:.3 ease all;}
+
+   /* ######### subVisual(공통) ######## */
+      .subVisual{width:100%; height:100vh; position:relative; overflow:hidden;}
+      .subVisual .sub_vis_bg{width:100%; height:100%;}
+      .subVisual .sub_vis_bg img{width:100%; height:100%; object-fit:cover;}
+      .subVisual .vis_desc{width:100%; position:absolute; top:20%; left:0; color:#fff; text-align:center;}
+      .subVisual .vis_desc h3{font-size:14px; padding-bottom:18px;}
+      .subVisual .vis_desc p{width:500px; margin:0 auto;font-size:11px;}
+      
+      .subVisual_sec{width:100%; height:100vh; overflow:hidden; background-image:url('img/sub2/sub_visual2.jpg'); background-size:cover; background-repeat:no-repeat;}
+      .subVisual_sec .inner{position:relative;}
+      .subVisual_sec .vis_desc{width:300px; color:#fff; position:absolute; left:0; top:50%; transform:translateY(-50%);}
+      .subVisual_sec .vis_desc h3{font-size:34px; padding-bottom:20px;}
+      .subVisual_sec .vis_desc p{font-size:12px;}
+      .subVisual_sec .vis_desc .btn{padding-top:20px; position:relative;}
+      .subVisual_sec .vis_desc .btn a{display:inline-block; color:#fff; font-size:11px; position:relative;}
+      .subVisual_sec .vis_desc .btn a:before{content:''; display:block; width:0; height:1px; background-color:#fff; position:absolute; left:0; bottom:-1px; transition:width .3s ease;}
+      .subVisual_sec .vis_desc .btn a:hover:before{width:100%;}
+      
+
+   /* ######### connectedText ######## */
+      #connectedText{width:100%;}
+      #connectedText .first_connected{width:100%; height:430px; padding:20px 0;}
+      #connectedText .first_connected:after{content:''; display: block; clear:both;}
+      #connectedText .first_connected .desc_area{width:640px; height:100%; float:left; position:relative;}
+      #connectedText .first_connected .desc{position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); text-align:left;}
+      #connectedText .first_connected .desc h4{font-size:14px; padding-bottom:8px;}
+      #connectedText .first_connected .desc p{font-size:12px; color:#ccc;}
+      #connectedText .first_connected .img{width:640px; height:100%; padding:20px 0; box-sizing:border-box; text-align:center; overflow:hidden; float:left;}
+      #connectedText .first_connected .img img{height:100%;}
+      
+      #connectedText .second_connected{width:100%; height:430px; padding:20px 0;}
+      #connectedText .second_connected .img{width:640px; height:100%; padding:10px 0; box-sizing:border-box; text-align:center; overflow:hidden; float:left;}
+      #connectedText .second_connected .img img{height:100%;}
+      #connectedText .second_connected .desc_area{width:640px; height:100%; float:left; position:relative;}
+      #connectedText .second_connected .desc{position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); text-align:left;}
+      #connectedText .second_connected .desc h4{font-size:14px; padding-bottom:8px;}
+      #connectedText .second_connected .desc p{font-size:12px; color:#ccc;}
+
+   /* ######### connectedSpec ######## */
+      #connectedSpec{width:100%; padding:80px 0; }
+      #connectedSpec .inner:after{content:''; display:block; clear:both;}
+      #connectedSpec .img{width:50%; float:left;}
+      #connectedSpec .img img{width:100%;}
+      #connectedSpec .spec_area{width:50%; height:100%; float:left;}
+      #connectedSpec .spec_area h3{font-size:14px; padding:25px 0 40px;}
+      #connectedSpec .spec_tit{width:70%; margin-right:30%; border-top:1px solid #ccc;}
+      #connectedSpec .spec_tit li{border-bottom:1px solid #ccc;}
+      #connectedSpec .spec_tit li a{display:block; width:100%; height:100%; padding:12px 0; font-size:12px; font-weight:600;}
+      /* spec display */
+      #connectedSpec .spec{width:100%; display:none;}
+      #connectedSpec .spec:after{content:''; display:block; clear:both;}
+      #connectedSpec .spec li{width:50%; padding-right:10%; box-sizing:border-box; padding-bottom:20px; border:0; float:left;}
+      #connectedSpec .spec li strong{display:block; font-size:11px; padding-bottom:5px;}
+      #connectedSpec .spec li em{font-size:10px; color:#aaa;}
+
+      #pro_sel{width:100%; padding:20px 0 80px;}
+      #pro_sel .sellection{width:100%;overflow:scroll;}
+      #pro_sel .inner:after{content:''; display:block; clear:both;}
+      #pro_sel ul{width:2220px; height:400px; margin:0 auto;}
+      #pro_sel li{width:350px; height:400px;  margin-right:20px; background-color:#fafafa; float:left;}
+      /* pro_sel / li 안에 있는 div a 공통 */
+      #pro_sel li div a{width:100%; height:100%; display:block; }
+      #pro_sel li .sel_img{width:100%; height:270px; padding:20px 0 10px; text-align:center;}
+      #pro_sel li .sel_img a{display:block; width:100%; height:100%; }
+      #pro_sel li .sel_img a img{height:100%;}
+      #pro_sel li.sel_box2 .sel_img img{width:100%;}
+      #pro_sel .sel_text{width:100%; height:100px; font-size:12px; font-weight:600; text-align:center;}
+      /* sel_text span 공통 */
+      #pro_sel .sel_text span{display:block; padding-bottom:5px;}
+      #pro_sel .sel_text .promotion{color:#BF1932; padding-bottom:8px;}
+      /* sel_text strong(title) */
+      #pro_sel .sel_text strong{display:block; font-size:11px; padding:5px 0 12px;}
+      #pro_sel .sel_text .price{font-size:11px; color:#000; font-weight:300;}
+
+      #collectionBan{width:100%; background-color:#efefef;}
+      /* 
+         banner_area 너비 : 580px 
+         banner_text 글자 띄어쓰기
+         banner_area 높이 : 210px 
+      */
+      #collectionBan .banner_area{width:580px; height:380px; margin:0 auto; text-align:center;}
+      #collectionBan .banner_area h3{font-size:24px; padding:80px 0 20px;}
+      #collectionBan .banner_area .banner_text{width:100%; font-size:13px; color:#aaa; padding-bottom:20px;}
+      #collectionBan .banner_area .banner_btn{width:130px; height:30px; margin:0 auto;}
+      #collectionBan .banner_area a{display:block; width:100%; height:100%;}
+      #collectionBan .banner_area a button{width:100%; height:100%; border:1px solid #000; background-color:#efefef; padding:0 4px; transition:.3s ease all;}
+      #collectionBan .banner_area a button:hover{background-color:#000; color:#fff;}
+
+   /* ############## banner ############### */
+      #banner{width:100%; height:50px; overflow:hidden; background-color:#000;}
+      #banner p{width:200px; height:100%; margin:10px auto 0;}
+      #banner p img{width:100%;}
+
+   /* ############## footer ############### */
+      #footer{width:100%; background-color:#000; padding:80px 0;}
+      #footer:after{content:''; display:block; clear:both;}
+      #footer .inner div{width:20%; float:left; color:#fff;}
+      #footer ul{width:100%;}
+      #footer h3{font-size:14px; color:#fff; padding-bottom:20px;}
+      #footer li{width:100%;  padding-bottom:12px;}
+      #footer li a{display: inline-block; position:relative; transition:.3s ease all;}
+      #footer li a:after{content:''; width:0; height:1px; position:absolute; left:50%; bottom:-5px; background-color:#fff;  transform:translateX(-50%); transition:.5s ease all;}
+      #footer li a:hover:after{width:100%;}
+      #footer li a{font-size:12px; color:#fff;}
+
+	</style>
+   <script>
+      $(function(){
+         // $('connectedSpec ul li').click(function(){
+         //    var now = true;
+         //    if($('connectedSpec ul li').is(':visible') == false){
+         //       $(this).click(function(){
+         //       });
+         //    }else{
+         //    }
+         // });
+
+            
+         $(window).scroll(function(){
+            var userScroll = $(this).scrollTop(),  
+               info = $('#productInfo');
+            
+            if(userScroll > 0){
+               info.addClass('active');
+            }else{
+               info.removeClass('active');
+            }
+         });
+
+      });
+   </script>
+</head>
+<body>
+	<div id="wrap">
+      <header id="header">
+         <div id="headerInfo">
+            <ul class="l_info">
+               <li class="cont">
+                  <select id="cont" title="Europe">
+                     <option value="South_Korea||English">South Korea||English</option>
+                     <option value="Albania">Albania</option>
+                     <option value="Austria">Austria</option>
+                     <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                     <option value="Belgium">Belgium</option>
+                     <option value="Bulgaria">Bulgaria</option>
+                     <option value="Schweiz/Suisse/Svizzera">Schweiz/Suisse/Svizzera</option>
+                     <option value="Cyprus">Cyprus</option>
+                     <option value="Germany">Germany</option>
+                     <option value="Denmark">Denmark</option>
+                  </select>
+               </li>
+               <li>
+                  <a href="#" title="Accessibility">
+                     Accessibility
+                  </a>
+               </li>
+               <li>
+                  <a href="#" title="Find a TAG Heuer store">
+                     Find a TAG Heuer store
+                  </a>
+               </li>
+            </ul>
+            <ul class="r_info">
+               <li>
+                  <a href="#"title="Services">
+                     Services
+                  </a>
+               </li>
+               <li>
+                  <a href="#" title="Accessibility">
+                     Contact
+                  </a>
+               </li>
+               <li>
+                  <a href="#" title="us +41 (0) 800 005 858">
+                     us +41 (0) 800 005 858
+                  </a>
+               </li>
+            </ul>
+         </div>
+         <nav id="nav">
+            <div class="inner">
+               <h1>
+                  <a href="index.html" title="TagHeuer">
+                     <img src="img/logo.SVG" alt="TagHeuer"/>
+                  </a>
+               </h1>
+               <ul class="gnb">
+                  <li>
+                     <a href="#" title="TIMEPIECES">TIMEPIECES</a>
+                  </li>
+                  <li>
+                     <a href="#" title="SMARTWATCHES">SMARTWATCHES</a>
+                  </li>
+                  <li>
+                     <a href="#" title="TAG_HEUER_UNIVERSE">TAG HEUER UNIVERSE</a>
+                  </li>
+               </ul>
+               <!-- gnb -->
+            </div>
+            <div id="productInfo">
+               <div class="inner">
+                  <div class="img">
+                     <a href="#" title="TAG HEUER CONNECTED">
+                        <img src="img/sub2/thumbnail3.png" alt="TAG HEUER CONNECTED"/>
+                     </a>
+                  </div>
+                  <div class="info">
+                     <p>TAG HEUER CONNECTED</p>
+                     <p>₩ 2.710.000</p>
+                  </div>
+                  <div class="cart">
+                     <a href="#" title="ADD_CART">ADD CART</a>
+                  </div>
+               </div>
+            </div>
+            <!-- productInfo -->
+         </nav>
+         <!-- header -->
+      </header>
+      <!-- headerWrap -->
+
+      <div id="container">
+         <div id="proVisual">
+            <h2>productArea</h2>
+            <div class="inner">
+               <div id="descArea">
+                  <span>NEW</span>
+                  <h3>TAG HEUER CONNECTED</h3>
+                  <p class="info">
+                     <strong>
+                        Calibre E4 - 42 mm<br/>
+                        SBR8010.BA0617
+                     </strong>
+                  </p>
+                  <p class="price">
+                     <em>
+                        ₩ 2.710.000
+                     </em>
+                  </p>
+                  <p class="desc">
+                     Customized for your best performance, this cutting edge TAG Heuer Connected Watch pushes the boundaries of technology. An elegant chronograph style 42mm steel case, with steel buttons and crown, make this the... ultimate luxury smartwatch. <br/>
+                     <a href="#" title="Read_more">Read more</a>
+                  </p>
+                  <div id="btnArea">
+                     <div class="cart_btn">
+                        <p>
+                           <a href="#" title="ADD_TO_CART">
+                              ADD TO CART
+                           </a>
+                        </p>
+                     </div>
+                     <div class="ad_btn">
+                        <p>
+                           <a href="#" title="ADJUST_THE_STRAP">
+                              ADJUST THE STRAP
+                           </a>
+                        </p>
+                     </div>
+                  </div>
+                  <div id="details">
+                     <ul>
+                        <li>
+                           <a href="#" title="Favorite">Favorite</a>
+                        </li>
+                        <li>
+                           <a href="#" title="Size">Size</a>
+                        </li>
+                        <li>
+                           <a href="#" title="Store_Location">Store Location</a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div id="optionArea">
+                     <h4>COLOR AND MATERIAL OPTIONS</h4>
+                     <ul>
+                        <li>
+                           <p>
+                              <a href="#" title="COLOR_AND_MATERIAL_OPTIONS_0">
+                                 <img src="img/sub2/option_image0.png" alt="COLOR_AND_MATERIAL_OPTIONS_0"/>
+                              </a>
+                           </p>
+                        </li>
+                        <li>
+                           <p>
+                              <a href="#" title="COLOR_AND_MATERIAL_OPTIONS_1">
+                                 <img src="img/sub2/option_image1.png" alt="COLOR_AND_MATERIAL_OPTIONS_1"/>
+                              </a>
+                           </p>
+                        </li>
+                        <li>
+                           <p>
+                              <a href="#" title="COLOR_AND_MATERIAL_OPTIONS_1">
+                                 <img src="img/sub2/option_image2.png" alt="COLOR_AND_MATERIAL_OPTIONS_2"/>
+                              </a>
+                           </p>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <!-- desc_area -->
+            </div>
+            <!-- inner -->
+            <div id="mainImg">
+               <ul>
+                  <li class="acitve_img">
+                     <p>
+                        <img src="img/sub2/main_image0.png" alt="Connected0"/>
+                     </p>
+                  </li>
+                  <li>
+                     <p>
+                        <img src="img/sub2/main_image1.png" alt="Connected1"/>
+                     </p>
+                  </li>
+                  <li>
+                     <p>
+                        <img src="img/sub2/main_image2.png" alt="Connected2"/>
+                     </p>
+                  </li>
+                  <li>
+                     <p>
+                        <img src="img/sub2/main_image3.png" alt="Connected3"/>
+                     </p>
+                  </li>
+               </ul>
+            </div>
+            <!-- mainImg -->
+            <div id="thumbnail">
+               <ul>
+                  <li class="active">
+                     <p>
+                        <a href="#" title="Connected_thum0">
+                           <img src="img/sub2/thumbnail0.png" alt="Connected_thum0"/>
+                        </a>
+                     </p>
+                  </li>
+                  <li>
+                     <p>
+                        <a href="#" title="Connected_thum1">
+                           <img src="img/sub2/thumbnail1.png" alt="Connected_thum1"/>
+                        </a>
+                     </p>
+                  </li>
+                  <li>
+                     <p>
+                        <a href="#" title="Connected_thum2">
+                           <img src="img/sub2/thumbnail2.png" alt="Connected_thum2"/>
+                        </a>
+                     </p>
+                  </li>
+                  <li>
+                     <p>
+                        <a href="#" title="Connected_thum3">
+                           <img src="img/sub2/thumbnail3.png" alt="Connected_thum3"/>
+                        </a>
+                     </p>
+                  </li>
+               </ul>
+            </div>
+            <!-- thumbnail -->
+         </div>
+         <!-- proVisual -->
+         <div id="parallaxImg">
+            <div class="row">
+               <div class="left">
+                  <div class="l_box">
+                     <img src="img/sub2/pinterest0.png" alt="connected_img0"/>
+                  </div>
+                  <div class="l_box">
+                     <img src="img/sub2/pinterest1.png" alt="connected_img1"/>
+                  </div>
+               </div>
+               <div class="right r_box">
+                  <a href="#" title="connected_video">
+                     <img src="img/sub2/pinterest2.png" alt="connected_video0"/>
+                  </a>
+                  <div class="pointer">
+                     <a href="#none" title="pointer"></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- parallaxImg -->
+         <div class="subVisual">
+            <p class="sub_vis_bg">
+               <img src="img/sub2/sub_visual0.jpeg" alt="visual0"/>
+            </p>
+            <div class="vis_desc">
+               <h3>
+                  ADVANCED, ADAPTABLE AND AGILE
+               </h3>
+               <p>A dial of your choosing, the cutting edge endless screen uses a sapphire glass box with an integrated silver timer. A high-tech extension of yourself.</p>
+            </div>
+         </div>
+         <!-- subVisual -->
+         <div id="connectedText">
+            <h2>connected infomation</h2>
+            <div class="inner">
+               <div class="first_connected">
+                  <div class="desc_area">
+                     <div class="desc">
+                        <h4>INNOVATIVE COMFORT AND DESIGN</h4>
+                        <p>
+                           Crafted with slim lines and superior ergonomics, the round steel case with alternate finishings is water-resistant to 50 meters. Set your goals.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="img">
+                     <img src="img/sub2/pinterest3.png" alt="INNOVATIVE_COMFORT_AND_DESIGN"/>
+                  </div>
+               </div>
+               <!-- first_connected -->
+               <div class="second_connected">
+                  <div class="img">
+                     <img src="img/sub2/pinterest4.png" alt="CUSTOMIZED_TO_STAY_AHEAD"/>
+                  </div>
+                  <div class="desc_area">
+                     <div class="desc">
+                        <h4>CUSTOMIZED TO STAY AHEAD</h4>
+                        <p>
+                           The versatile H-shaped steel bracelet with folding clasp and safety push-buttons is easily interchangeable. Seamless luxury meets high-tech design.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <!-- second_connected -->
+            </div>
+         </div>
+         <!-- connectedText -->
+         <div class="subVisual">
+            <p class="sub_vis_bg">
+               <img src="img/sub2/sub_visual1.jpeg" alt="visual1"/>
+            </p>
+            <div class="vis_desc">
+               <h3>
+                  ADVANCED, ADAPTABLE AND AGILE
+               </h3>
+               <p>A dial of your choosing, the cutting edge endless screen uses a sapphire glass box with an integrated silver timer. A high-tech extension of yourself.</p>
+            </div>
+         </div>
+         <!-- subVisual -->
+         <div id="connectedSpec">
+            <h2>TECHNICAL SPECIFICATIONS</h2>
+            <div class="inner">
+               <div class="img">
+                  <a href="" title="TAG_HEUER_CONNECTED">
+                     <img src="img/sub2/product_info0.png" alt="TAG_HEUER_CONNECTED"/>
+                  </a>
+               </div>
+               <div class="spec_area">
+                  <h3>TECHNICAL SPECIFICATIONS</h3>
+                  <ul class="spec_tit">
+                     <li>
+                        <a href="#none" title="CASE">
+                           <span>CASE</span>
+                           <i></i>
+                        </a>
+                        <ul class="spec">
+                           <li>
+                              <strong>Size</strong>
+                              <em>42 mm</em>
+                           </li>
+                           <li>
+                              <strong>Water resistance</strong>
+                              <em>50 m</em>
+                           </li>
+                           <li>
+                              <strong>Case</strong>
+                              <em>Steel</em>
+                           </li>
+                           <li>
+                              <strong>Bezel</strong>
+                              <em>Fixed Bezel Ceramic</em>
+                           </li>
+                           <li>
+                              <strong>Buttons</strong>
+                              <em>3 Mechanical Push Buttons</em>
+                           </li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="#none" title="BAND">
+                           <span>BAND</span>
+                           <i></i>
+                        </a>
+                        <ul class="spec">
+                           <li>
+                              <strong>Material</strong>
+                              <em>Steel</em>
+                           </li>
+                           <li>
+                              <strong>Finishing</strong>
+                              <em>Fine-Brushed/Polished</em>
+                           </li>
+                           <li>
+                              <strong>Buckle</strong>
+                              <em>Folding Clasp Push-Buttons - Steel</em>
+                           </li>
+                           <li>
+                              <strong>Interchangeable strap system</strong>
+                              <em>Yes</em>
+                           </li>
+                           <li>
+                              <strong>Buttons</strong>
+                              <em>3 Mechanical Push Buttons</em>
+                           </li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="#none" title="BATTERY">
+                           <span>BATTERY</span>
+                           <i></i>
+                        </a>
+                        <ul class="spec">
+                           <li>
+                              <strong>Capacity</strong>
+                              <em>330 mAh</em>
+                           </li>
+                           <li>
+                              <strong>Autonomy</strong>
+                              <em>A full day (1h30 Running, including Wellness)</em>
+                           </li>
+                           <li>
+                              <strong>Charging time</strong>
+                              <em>100% in 1h30</em>
+                           </li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="#none" title="CONNECTIVITY">
+                           <span>CONNECTIVITY</span>
+                           <i></i>
+                        </a>
+                        <ul class="spec">
+                           <li>
+                              <strong>Heartrate monitor</strong>
+                              <em>heart rate, compass, accelerometer, gyroscope, NFC, microphone, barometer, ambient_light</em>
+                           </li>
+                           <li>
+                              <strong>Operating system</strong>
+                              <em>Wear OS by Google</em>
+                           </li>
+                           <li>
+                              <strong>Compatibility</strong>
+                              <em>Android 6.0 + (excluding Go edition) / iOS 13.0 +</em>
+                           </li>
+                           <li>
+                              <strong>Pre-Installed apps</strong>
+                              <em>TAG Heuer Wellness, TAG Heuer Golf, TAG Heuer Sports (Running, Cycling, Fitness, Swimming, other sports)</em>
+                           </li>
+                           <li>
+                              <strong>Connectivity</strong>
+                              <em>Android 6.0 + (excluding Go edition) / iOS 13.0 +</em>
+                           </li>
+                           <li>
+                              <strong>Compatibility</strong>
+                              <em>Wifi, SAR: 0.014 W/kg , Bluetooth 5.0</em>
+                           </li>
+                           <li>
+                              <strong>SAR</strong>
+                              <em>0.8440 W/kg</em>
+                           </li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="#none" title="PROCESSOR">
+                           <span>PROCESSOR</span>
+                           <i></i>
+                        </a>
+                        <ul class="spec">
+                           <li>
+                              <strong>Chipset</strong>
+                              <em>
+                                 CPU Clock Speed: Up to 1.7 GHz<br/>
+                                 CPU Cores: 4x ARM Cortex A53<br/>
+                                 CPU Architecture: 64-bit
+                              </em>
+                           </li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="#none" title="DISPLAY">
+                           <span>DISPLAY</span>
+                           <i></i>
+                        </a>
+                        <ul class="spec">
+                           <li>
+                              <strong>Size</strong>
+                              <em>OLED display 1.28"</em>
+                           </li>
+                           <li>
+                              <strong>Glass</strong>
+                              <em>Sapphire Crystal</em>
+                           </li>
+                           <li>
+                              <strong>Navigation</strong>
+                              <em>touchscreen, crown, pushers</em>
+                           </li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="#none" title="REFERENCE_NUMBER">
+                           <span>REFERENCE NUMBER</span>
+                           <i></i>
+                        </a>
+                        <ul class="spec">
+                           <li>
+                              <em>SBR8010.BA0617</em>
+                           </li>
+                        </ul>
+                     </li>
+                  </ul>
+                  <!-- spec -->
+               </div>
+               <!-- spec_area -->
+            </div>
+         </div>
+         <!-- connectedSpec -->
+         <div id="pro_sel">
+            <div class="sellection">
+               <div class="inner">
+                  <ul>
+                     <li class="sel_box0">
+                        <div class="sel_img">
+                           <a href="#" title="sellection">
+                              <img src="img/sub2/strap0.png" alt="sel_img0">
+                           </a>
+                        </div>
+                        <div class="sel_text">
+                           <a href="#" title="sellection">
+                              <span class="promotion">NEW</span>
+                              <strong>STEEL RUBBER STRAP 42MM</strong>
+                              <span class="price">270,000</span>
+                           </a>
+                        </div>
+                     </li>
+                     <li class="sel_box1">
+                        <div class="sel_img">
+                           <a href="#" title="sellection">
+                              <img src="img/sub2/strap1.png" alt="sel_img1">
+                           </a>
+                        </div>
+                        <div class="sel_img active">
+                           <a href="#" title="sellection">
+                              <img src="img/sub2/strap1_0.png" alt="sel_img_active1">
+                           </a>
+                        </div>
+                        <div class="sel_text">
+                           <a href="#" title="sellection">
+                              <span class="promotion">NEW</span>
+                              <strong>STEEL RUBBER STRAP 42MM</strong>
+                              <span class="price">270,000</span>
+                           </a>
+                        </div>
+                     </li>
+                     <li class="sel_box2">
+                        <div class="sel_img">
+                           <a href="#" title="sellection">
+                              <img src="img/sub2/strap2.png" alt="sel_img2">
+                           </a>
+                        </div>
+                        <div class="sel_img active">
+                           <a href="#" title="sellection">
+                              <img src="img/sub2/strap2_0.png" alt="sel_img_active2">
+                           </a>
+                        </div>
+                        <div class="sel_text">
+                           <a href="#" title="sellection">
+                              <span class="promotion">NEW</span>
+                              <strong>STEEL RUBBER STRAP 42MM</strong>
+                              <span class="price">270,000</span>
+                           </a>
+                        </div>
+                     </li>
+                     <li class="sel_box3">
+                        <div class="sel_img">
+                           <a href="#" title="sellection">
+                              <img src="img/sub2/strap3.png" alt="sel_img3">
+                           </a>
+                        </div>
+                        <div class="sel_img active">
+                           <a href="#" title="sellection">
+                              <img src="img/sub2/strap3_0.png" alt="sel_img_active3">
+                           </a>
+                        </div>
+                        <div class="sel_text">
+                           <a href="#" title="sellection">
+                              <span class="promotion">NEW</span>
+                              <strong>STEEL RUBBER STRAP 42MM</strong>
+                              <span class="price">270,000</span>
+                           </a>
+                        </div>
+                     </li>
+                     <li class="sel_box4">
+                        <div class="sel_img">
+                           <a href="#" title="sellection">
+                              <img src="img/sub2/strap4.png" alt="sel_img4">
+                           </a>
+                        </div>
+                        <div class="sel_img active">
+                           <a href="#" title="sellection">
+                              <img src="img/sub2/strap4_0.png" alt="sel_img_active4">
+                           </a>
+                        </div>
+                        <div class="sel_text">
+                           <a href="#" title="sellection">
+                              <span class="promotion">NEW</span>
+                              <strong>STEEL RUBBER STRAP 42MM</strong>
+                              <span class="price">270,000</span>
+                           </a>
+                        </div>
+                     </li>
+                     <li class="sel_box5">
+                        <div class="sel_img">
+                           <a href="#" title="sellection">
+                              <img src="img/sub2/strap5.png" alt="sel_img5">
+                           </a>
+                        </div>
+                        <div class="sel_img active">
+                           <a href="#" title="sellection">
+                              <img src="img/sub2/strap5_0.png" alt="sel_img_active5">
+                           </a>
+                        </div>
+                        <div class="sel_text">
+                           <a href="#" title="sellection">
+                              <span class="promotion">NEW</span>
+                              <strong>STEEL RUBBER STRAP 42MM</strong>
+                              <span class="price">270,000</span>
+                           </a>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <!-- /selection -->
+         </div>
+         <!-- pro_sel -->
+         <div class="subVisual_sec">
+            <div class="inner">
+               <div class="vis_desc">
+                  <h3>
+                     GO FURTHER WITH TAG HEUER CONNECTED
+                  </h3>
+                  <p>
+                     Discover how to use the TAG Heuer Connected
+                     Explore every function up close.
+                     Get answers to your questions.
+                  </p>
+                  <p class="btn">
+                     <a href="#" title="GET_STARTED">GET STARTED</a>
+                  </p>
+               </div>
+            </div>
+         </div>
+         <!-- subVisual -->
+         <div id="collectionBan">
+            <div class="banner_area">
+               <h3>SWISS AVANT-GARDE SINCE 1860</h3>
+               <p class="banner_text">
+                  The reference in luxury chronograph watches, TAG Heuer’s high-precision timing innovations
+                  have kept pace with the evolution of sports since 1860. Our timepieces make it possible to
+                  capture every fraction of a second of a performance. From the wrists of the drivers who have
+                  marked the history of motor racing to your wrist, TAG Heuer watches have a lasting impact on
+                  their time and their era.
+               </p>
+               <p class="banner_btn">
+                  <a href="#" title="Find_The_Perfect_Watch">
+                     <button>Find The Perfect Watch</button>
+                  </a>
+               </p>
+            </div>
+         </div>
+         <!-- collectionBan -->
+         <div id="banner">
+            <p>
+               <img src="img/banner.png" alt="tagheuer">
+            </p>
+         </div>
+         <!-- banner -->
+      </div>
+      <!-- container -->
+      <div id="footer">
+         <div class="inner">
+
+            <div class="f_follow">
+               <h3>FOLLOW US</h3>
+               <ul>
+                  <li><a href="#" title="Facebook">Facebook</a></li>
+                  <li><a href="#" title="Instagram">Instagram</a></li>
+                  <li><a href="#" title="LinkedIn">LinkedIn</a></li>
+                  <li><a href="#" title="Pinterest">Pinterest</a></li>
+                  <li><a href="#" title="Youtube">Youtube</a></li>
+                  <li><a href="#" title="Twitter">Twitter</a></li>
+                  <li><a href="#" title="Weibo">Weibo</a></li>
+                  <li><a href="#" title="WeChat">WeChat</a></li>
+                  <li><a href="#" title="Line">Line</a></li>
+                  <li><a href="#" title=""></a></li>
+               </ul>
+            </div>
+            <div class="f_collection">
+               <h3>COLLECTIONS</h3>
+               <ul>
+                  <li><a href="#" title="TAG_Heuer_Connected">TAG Heuer Connected</a></li>
+                  <li><a href="#" title="TAG_Heuer_Carrera">TAG Heuer Carrera</a></li>
+                  <li><a href="#" title="TAG_Heuer_Formula_1">TAG Heuer Formula 1</a></li>
+                  <li><a href="#" title="TAG_Heuer_Aquaracer">TAG Heuer Aquaracer</a></li>
+                  <li><a href="#" title="TAG_Heuer_Monaco">TAG Heuer Monaco</a></li>
+                  <li><a href="#" title="TAG_Heuer_Autavia">TAG Heuer Autavia</a></li>
+                  <li><a href="#" title="TAG_Heuer_Link">TAG Heuer Link</a></li>
+               </ul>
+            </div>
+            <div class="f_maison">
+               <h3>MAISON</h3>
+               <ul>
+                  <li><a href="#" title="Our_Company">Our Company</a></li>
+                  <li><a href="#" title="Our_Story">Our Story</a></li>
+                  <li><a href="#" title="Savoir-Faire">Savoir-Faire</a></li>
+                  <li><a href="#" title="Press_Corner">Press Corner</a></li>
+                  <li><a href="#" title="Professional_Timing ">Professional Timing </a></li>
+                  <li><a href="#" title="Career">Career</a></li>
+                  <li><a href="#" title="Site_map">Site map</a></li>
+               </ul>
+            </div>
+            <div class="f_support">
+               <h3>SUPPORT</h3>
+               <ul>
+                  <li><a href="#" title="Contact_Us">Contact Us</a></li>
+                  <li><a href="#" title="FAQ">FAQ</a></li>
+                  <li><a href="#" title="Customer_Care">Customer Care</a></li>
+                  <li><a href="#" title="Warranty">Warranty</a></li>
+                  <li><a href="#" title="Shipping">Shipping</a></li>
+                  <li><a href="#" title="Returns">Returns</a></li>
+                  <li><a href="#" title="Buying_on_TAGHeuer.com">Buying on TAGHeuer.com</a></li>
+                  <li><a href="#" title="PRIVACY_N_TERMS">PRIVACY &amp; TERMS</a></li>
+               </ul>
+            </div>
+            <div class="f_terms">
+               <h3>PRIVACY &amp; TERMS</h3>
+               <ul>
+                  <li><a href="#" title="Terms & Conditions">Terms &amp; Conditions</a></li>
+                  <li><a href="#" title="Privacy_Policy">Privacy_Policy</a></li>
+                  <li><a href="#" title="Cookies_Settings">Cookies Settings</a></li>
+                  <li><a href="#" title="Press_Corner">Press Corner</a></li>
+                  <li><a href="#" title="Professional_Timing ">Professional Timing </a></li>
+                  <li><a href="#" title="Terms_of_Use">Terms of Use</a></li>
+                  <li><a href="#" title="Human_Rights_Policy">Human Rights Policy</a></li>
+                  <li><a href="#" title="Supply_Chain_Policies">Supply Chain Policies</a></li>
+                  <li><a href="#" title="Legal_Notice">Legal Notice</a></li>
+                  <li><a href="#" title="Accessibility_Statement">Accessibility Statement</a></li>
+               </ul>
+            </div>
+
+         </div>
+      </div>
+      <!-- footer -->
+   </div>
+</body>
+</html>
