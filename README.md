@@ -8,3 +8,5 @@
 
 -  <strong>프로젝트 기간</strong>
 > 2022.02.05 ~ 2022.05.25
+
+- <strong>Tech Stac</strong>
