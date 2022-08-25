@@ -1,8 +1,6 @@
 
-<p align = "center">
 # tagheuer
-</p>
-[Tagheuer Project](http://dotsisi154.dothome.co.kr/tagheuer/index.html,Tagheuer Link)
+[Tagheuer Project] (http://dotsisi154.dothome.co.kr/tagheuer/index.html,Tagheuer Link)
 
 
 - <strong>소개</strong>
