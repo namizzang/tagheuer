@@ -1,8 +1,5 @@
 $(function(){
    // .mobile_nav
-   $('#header').load('/header.html');
-   $('#footer').load('/footer.html');
-   
    var $dropButton = $('.m_hamburger').find('a'),
       $dropBar = $dropButton.find('span'),
       $mobileNav = $('#mobile_nav');
@@ -125,7 +122,7 @@ $(function(){
       proIndicator = productColumn.find('.pro_indicator p'),
       proNav = productColumn.find('.arrow'),
       proNavA = proNav.find('a'),
-      currnet = 0;
+      current = 0;
 
    proSlide(0);
    function proSlide(i){
