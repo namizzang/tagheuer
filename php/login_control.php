@@ -23,7 +23,6 @@
 	else{
 		echo "<script>alert('ID 혹은 비밀번호를 확인해 주세요!')</script>";
       echo "<script>location.replace('login.php');</script>";
-      
 	}
    
    //결과가 존재하면 세션 생성
